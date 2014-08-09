@@ -12,7 +12,7 @@ jQuery(document).ready(function() {
       return false;
     }
   });
-  
+
   jQuery('.form-cancel').click(function() {
     jQuery('.form').hide('5000');
   });
