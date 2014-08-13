@@ -19,7 +19,7 @@
 						<div class="menu">
 							<div><p><a class="button about" href="#about">ABOUT</a></p></div>
 							<div><p><a class="button services" href="#services">SERVICES</a></p></div>
-							<div><p><a class="button contacts" href="#contacts">CONTACT US</a></div>
+							<div><p><a class="button contacts alpha-23423423" href="#contacts">CONTACT US</a></div>
 							<div class="clearfix"></div>
 						</div>
 						<div class="slogan"><p>More than just a photo</p></div>
@@ -79,12 +79,12 @@
 						<p>Tel.: +373 60799935</p>
 						<p>Fax: +373 022 885616</p>
 						<div class="form">
-							<form action="#" method="post" class="contact-form">
+							<form action="write.php" method="post" name="form1" class="contact-form">
 								<fieldset>
-									<p><label>Name:<input class="form-input-name" type="text" value="" size="30"/></label></p>
-									<p><label>E-mail:<input class="form-input-email" type="text" value="" size="30"/></label></p>
+									<p><label>Name:<input name="name" class="form-input-name" type="text" value="" size="30"/></label></p>
+									<p><label>E-mail:<input name="e-mail" class="form-input-email" type="text" value="" size="30"/></label></p>
 									<p>Your message:</p>
-									<textarea class="form-input-message" cols="50" rows="10"></textarea>
+									<textarea name="message" class="form-input-message" cols="50" rows="10"></textarea>
 								</fieldset>
 								<p><input class="form-send" type="submit" value="Send"></p>
 								<p><input class="form-cancel" type="button" value="Cancel"></p>

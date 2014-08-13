@@ -7,7 +7,11 @@ jQuery(document).ready(function() {
 		var input_name = jQuery('.contact-form .form-input-name');
 		var input_mail = jQuery('.contact-form .form-input-email');
 		var input_message = jQuery('.contact-form .form-input-message');
-		if (input_name.val() === "" || input_mail.val() === "" || input_message.val() === "") {
+    if (!input_mail.val().match(/^[a-z0-9-_]+(\.[a-z0-9]+)?@([a-z0-9-_\.])*[a-z0-9-_]+\.[a-z]{2,3}$/i)) {
+      alert('Enter some valid email');
+      return false;
+    }
+		else if (input_name.val() === "" || input_message.val() === "") {
 			alert('Empty value detected!');
 			return false;
 		}
@@ -34,7 +38,7 @@ jQuery(document).ready(function() {
 	function scroll_to(hhh) {
 		var ele = jQuery('div.' + hhh);
 		jQuery('html, body').animate({
-			'scrollTop' : ele.offset().top - 30
+			'scrollTop' : ele.offset().top - 40
 		}, 1000);
 	}
 });
